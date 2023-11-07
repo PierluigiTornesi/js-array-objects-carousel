@@ -1,3 +1,4 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 img{
     max-width:  100%;
 }
-
+/* colore sfondo */
 body{
     background-color:lightgrey
 }
@@ -18,13 +19,11 @@ body{
     display: flex;
     align-items: center;
 }
-
 .items {
     position: relative;
     width: 80%;
     margin: 0 auto;
 }
-
 .item {
     height: 500px;
     width: 100%;
@@ -32,34 +31,27 @@ body{
     position: relative;
     object-fit: cover;
 }
-
-
 .item.active {
     display: block;
 }
-
 .thumbs {
     height: 300px;
     background: #000;
     position: relative;
 }
-
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
 }
-
 .thumb img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .thumb.active {
     border: 2px solid #ccc;
     opacity: 1;
 }
-
 .prev, .next {
     width: 20px;
     height: 20px;
@@ -72,15 +64,12 @@ body{
     cursor: pointer;
     z-index: 999;
 }
-
 .prev {
     top: 0;
 }
-
 .next {
     bottom: 0;
 }
-
 .prev::after {
     content: '';
     width: 10px;
@@ -94,7 +83,6 @@ body{
     left: 50%;
     transform: translate(-50%) rotate(-45deg);
 }
-
 .next::before {
     content: '';
     width: 10px;

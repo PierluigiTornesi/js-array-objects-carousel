@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carosello News</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carosello News</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-    <div class="container">
-        <div class="items">
-            <div class="slides">
+    <body>
+        <!-- container principale del carosello -->
+        <div class="container">
+            <!-- div contenente la parte di sinistra -->
+            <div class="items">
+                <!-- div contenente le immagini che saranno aggiunte dinamicamente tramite js -->
+                <div class="slides">
+                </div>
+                <!-- div contenente le info delle immagini, ovvero titolo e testo -->
+                <div class="info">
+                    <h1 id="titolo"></h1>
+                    <span id="testo"></span>
+                </div>
             </div>
-            <div class="info">
-                <h1 id="titolo"></h1>
-                <span id="testo"></span>
+            <!-- div contenente la parte di destra -->
+            <div class="parteDestra">
+                <div class="parteDestraImg">
+
+                </div>
+                <!-- div contenente il bottone per andare indietro -->
+                <div class="prev" id="down-arrow"></div>
+                <!-- div contenente il bottone per andare avanti -->
+                <div class="next" id="up-arrow"></div>
             </div>
         </div>
-        <div class="parteDestra">
-            <div class="parteDestraImg">
 
-            </div>
-            <div class="prev" id="down-arrow"></div>
-            <div class="next" id="up-arrow"></div>
-        </div>
-    </div>
-
-    <!-- aggiungo lo script per poter usare js all'interno di questo html -->
-    <script src="js/data.js"></script>
-    <script src="js/script.js"></script>
-</body>
+        <!-- script del file contenente l'array di oggetti delle immagini -->
+        <script src="js/data.js"></script>
+        <!-- aggiungo lo script per poter usare js all'interno di questo html -->
+        <script src="js/script.js"></script>
+    </body>
 </html>
