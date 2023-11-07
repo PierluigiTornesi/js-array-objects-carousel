@@ -8,8 +8,11 @@ img{
     max-width:  100%;
 }
 
+body{
+    background-color:lightgrey
+}
 .container {
-    max-width: 900px;
+    width: 1000px;
     height: 100vh;
     margin: 0 auto;
     display: flex;
@@ -23,17 +26,13 @@ img{
 }
 
 .item {
-    height: 100%;
+    height: 500px;
     width: 100%;
     display: none;
     position: relative;
-}
-
-.item img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
+
 
 .item.active {
     display: block;
@@ -108,4 +107,40 @@ img{
     bottom: 35%;
     left: 50%;
     transform: translate(-50%) rotate(135deg);
+}
+/* classe per la parte di destra */
+.parteDestra{
+    position: relative;
+    width: 200px;
+    height: 500px;
+}
+/* classe del contenitore delle immagini */
+.parteDestraImg{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+/* classe per le immagini della parte destra */
+.image-destra{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    opacity: 30%;
+}
+/* classe per le info delle immagini */
+.info{
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    color: white;
+    z-index: 1000;
+    padding: 0 1rem;
+}
+/* classe per il bordo attorno alle immagini */
+.attuale{
+    opacity: 100%;
+    border: 3px solid red;
 }
